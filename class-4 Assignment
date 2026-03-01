@@ -1,0 +1,50 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyAppRANA());
+}
+
+class MyAppRANA extends StatelessWidget {
+  const MyAppRANA({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: const Color.fromARGB(255, 204, 184, 3),
+        body: SafeArea(
+          child: Center(
+            child: Column(
+              children: [
+                Text("Hello Flutter"),
+                Text("Hello Flutter"),
+
+                Container(
+                  height: 500,
+                  width: 300,
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 2, 182, 167),
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Align(
+                        alignment: Alignment.bottomRight,
+                        child: Text(
+                          "Hello Flutter",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                      Text("Hello Flutter"),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
