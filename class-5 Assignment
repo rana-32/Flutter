@@ -1,0 +1,33 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const rana());
+}
+
+class rana extends StatelessWidget {
+  const rana({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: Colors.yellow,
+        body: SingleChildScrollView(
+          child: Center(
+            child: Column(
+              children: [
+                Image.network(
+                  'https://upload.wikimedia.org/wikipedia/commons/6/67/Cristiano_Ronaldo_2275_%28cropped%29.jpg',
+                  height: 500,
+                  width: 200,
+                ),
+                Image.asset('assets/image.png', height: 350, width: 300),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
