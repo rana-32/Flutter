@@ -71,10 +71,44 @@ void main() {
 
   //double to int
   double num3 = 3.14;
-  int num4 = num.toInt();
+  int num4 = num3.toInt();
   print(num4);
 
+  ///function call inside main function
 
-  
+  //void function does not return any value-- function 1
+  printvalue();
 
+  // int function return a value -- fubnction 2
+  int resultINT = add(5, 10);
+  print(resultINT);
+
+  // function with condition -- function 3
+  int a = 8;
+  int b = 12;
+  biggest(a, b);
+}
+
+// function-->
+
+//void function-- function 1
+void printvalue() {
+  print("This is a function");
+}
+
+// int function RETURN A VALUE-- function 2
+int add(int a, int b) {
+  return a + b;
+  print("\n");
+}
+
+// function -- 3
+void biggest(int a, int b) {
+  if (a > b) {
+    print("$a is bigger than $b");
+  } else if (b > a) {
+    print("$b is bigger than $a");
+  } else {
+    print("Both numbers are equal");
+  }
 }
