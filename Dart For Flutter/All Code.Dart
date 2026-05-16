@@ -87,7 +87,7 @@ void main() {
   int a = 8;
   int b = 12;
   biggest(a, b);
-}
+}//end of main function
 
 // function-->
 
